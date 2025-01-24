@@ -5,8 +5,8 @@
 
 BONUS_FIXO = 1000
 nome = input("Digite seu nome: ")
-salario = int(input("Digite o valor do seu salário mensal: "))
+salario = float(input("Digite o valor do seu salário mensal: "))
 bonus = float(input("Digite o valor do bônus que você recebeu: "))
 kpi_bonus = BONUS_FIXO + salario * bonus
 
-print("Olá,", nome, "seu salário é de R$", salario, "e o seu bônus recebido foi de R$", kpi_bonus)
+print(f"Olá, {nome}. Seu salário é de R$ {salario:.2f} e o seu bônus recebido foi de R$ {kpi_bonus:.2f}")
