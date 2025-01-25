@@ -65,26 +65,118 @@ print(f"A área do círculo é {area_circulo:.2f}")"""
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+"""texto_usuario = input("Digite uma frase: ")
+texto_usuario_maiusculo = texto_usuario.upper()
+print(f"O texto em maiúsculo é: {texto_usuario_maiusculo}")"""
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+"""nome_usuario = input("Digite seu nome completo: ")
+nome_usuario_minusculo = nome_usuario.lower()
+print(f"O texto em minúsculo é: {nome_usuario_minusculo}")"""
+
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+"""texto_usuario = input("Digite uma frase: ")
+texto_usuario_sem_espacos = texto_usuario.strip()
+print(f"O texto sem espaços em branco no início e no final é: {texto_usuario_sem_espacos}")"""
+
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 """data_usuario = input("Insira uma data no formad dd/mm/aaaa: ")
 data_separada = data_usuario.split("/")
-
 print(f"Dia: {data_separada[0]}\n"+
       f"Mês: {data_separada[1]}\n"+
       f"Ano: {data_separada[2]}")"""
 
-
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+"""texto_1 = input("Digite o primeiro texto: ")
+texto_2 = input("Digite o segundo texto: ")
+texto_concatenado = texto_1 + texto_2
+print(f"O texto concatenado é: {texto_concatenado}")"""
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+"""expressao_1 = (input("Digite a primeira expressão booleana (True ou False): "))
+expressao_2 = (input("Digite a segunda expressão booleana (True ou False): "))
+flag_invalido = False
+
+if expressao_1 == "True":
+    expressao_1 = True
+elif (expressao_1 == "False"):
+    expressao_1 = False
+else:
+    flag_invalido = True
+    print("Valor 1 inválido")
+
+if expressao_2 == "True":
+    expressao_2 = True
+elif (expressao_2 == "False"):
+    expressao_2 = False
+else:
+    flag_invalido = True
+    print("Valor 2 inválido")
+
+if not flag_invalido:
+    resultado = expressao_1 and expressao_2
+    print(f"O resultado da operação AND é: {resultado}")"""
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+"""expressao_1 = (input("Digite a primeira expressão booleana (True ou False): "))
+expressao_2 = (input("Digite a segunda expressão booleana (True ou False): "))
+flag_invalido = False
+
+if expressao_1 == "True":
+    expressao_1 = True
+elif (expressao_1 == "False"):
+    expressao_1 = False
+else:
+    flag_invalido = True
+    print("Valor 1 inválido")
+
+if expressao_2 == "True":
+    expressao_2 = True
+elif (expressao_2 == "False"):
+    expressao_2 = False
+else:
+    flag_invalido = True
+    print("Valor 2 inválido")
+
+if not flag_invalido:
+    resultado = expressao_1 or expressao_2
+    print(f"O resultado da operação OR é: {resultado}")"""
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+"""valor_booleano = input("Digite um valor booleano (True ou False): ")
+flag_invalido = False
+
+if valor_booleano == "True":
+    valor_booleano = True
+elif (valor_booleano == "False"):
+    valor_booleano = False
+else:
+    flag_invalido = True
+    print("Valor inválido")
+
+if not flag_invalido:
+    resultado = not valor_booleano
+    print(f"A inversão da entrada é: {resultado}")"""
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+"""numero_1 = int(input("Digite o primeiro número inteiro: "))
+numero_2 = int(input("Digite o segundo número inteiro: "))
+
+if numero_1 == numero_2:
+    print("Os números são iguais")
+else:
+    print("Os números são diferentes")"""
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+numero_1 = int(input("Digite o primeiro número inteiro: "))
+numero_2 = int(input("Digite o segundo número inteiro: "))
+
+if numero_1 != numero_2:
+    print("Os números são diferentes")
+else:
+    print("Os números são iguais")
 
 # #### try-except e if
 
