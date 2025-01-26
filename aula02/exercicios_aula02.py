@@ -181,20 +181,72 @@ else:
 # #### try-except e if
 
 # 21: Conversor de Temperatura
-try: 
+"""try: 
     temperatura_celsius = float(input("Digite a temperatura em Celsius: "))
     temperatura_fahrenheit = (temperatura_celsius * 9/5) + 32
     print(f"A temperatura em Fahrenheit é {temperatura_fahrenheit:.2f}")
 except ValueError:
-    print("Valor inválido")
+    print("Valor inválido")"""
 
 # 22: Verificador de Palíndromo
-# 23: Calculadora Simples
-# 24: Classificador de Números
-# 25: Conversão de Tipo com Validação
+"""texto_usuario = input("Digite uma palavra ou frase: ")
+if isinstance(texto_usuario, str):
+    texto_usuario = texto_usuario.replace(" ", "").lower()
+    texto_invertido = texto_usuario[::-1]
+    if texto_usuario == texto_invertido:
+        print("O texto digitiado é um palíndromo")
+    else:
+        print("O texto digitado não é um palíndromo")
+else:
+    print("Entrada inválida, digite uma palavra ou frase.")"""
 
-# numero = int(input("Insira um numero: "))
-# if isinstance(numero, int):
-#     print("A variável é um inteiro")
-# else:
-#     print("A variável não é um inteiro")
+# 23: Calculadora Simples
+"""try:
+    numero_1 = float(input("Digite o primeiro número: "))
+    numero_2 = float(input("Digite o segundo número: "))
+    operacao = input("Digite a operação desejada (+, -, *, /): ")
+
+    if operacao == "+":
+        resultado = numero_1 + numero_2
+    elif operacao == "-":
+        resultado = numero_1 - numero_2
+    elif operacao == "*":
+        resultado = numero_1 * numero_2
+    elif operacao == "/":
+        resultado = numero_1 / numero_2
+    else:
+        print("Operação inválida")
+        resultado = None
+
+    if resultado is not None:
+        print(f"O resultado da operação é: {resultado}")
+except ValueError:
+    print("Valor inválido. A entrada deve ser um número.")"""
+
+# 24: Classificador de Números
+"""try:
+    numero = int(input("Digite um número inteiro: "))
+    if numero > 0:
+        print("O número é positivo")
+    elif numero < 0:
+        print("O número é negativo")
+    else:
+        print("O número é zero")
+
+    if numero % 2 == 0:
+        print("O número é par")
+    else:
+        print("O número é ímpar")    
+except ValueError:
+    print("Valor inválido. A entrada deve ser um número.")"""
+
+# 25: Conversão de Tipo com Validação
+lista_numeros = input("Digite uma lista de números separados por vírgula: ")
+lista_numeros = lista_numeros.split(",")
+lista_numeros_inteiros = []
+try:
+    for num in lista_numeros:
+        lista_numeros_inteiros.append(int(num))
+    print(f"Lista de números inteiros: {lista_numeros_inteiros}")    
+except ValueError:
+    print("Valor inválido, todos os elementos da lista devem ser números inteiros.")
