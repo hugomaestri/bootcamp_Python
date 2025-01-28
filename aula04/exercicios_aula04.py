@@ -122,23 +122,49 @@ print(f"Valores ímpares: {valores_impares}")
 """
 ### 11. Atualização de Dados
 # Objetivo: Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
-produtos = [
+"""produtos = [
     {"id": 1, "nome": "Teclado", "preço": 100},
     {"id": 2, "nome": "Mouse", "preço": 80},
     {"id": 3, "nome": "Monitor", "preço": 300}
 ]
 
 produtos[1]["preço"] = 90
-print(produtos)
+print(produtos)"""
 
 ### 12. Fusão de Dicionários
 # Objetivo: Dados dois dicionários, fundi-los em um único dicionário.
+"""dicionario1: dict[str, int] = {"a": 1, "b": 2}
+dicionario2: dict[str, int] = {"c": 3, "d": 4}
+
+dicionario_fundido: dict[str, int] = {**dicionario1, **dicionario2}
+print(dicionario_fundido)"""
 
 ### 13. Filtragem de Dados em Dicionário
 # Objetivo: Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
+"""estoque = {"Teclado": 10, "Mouse": 0, "Monitor": 3, "CPU": 0}
+estoque_filtrado = {}
+for produto, quantidade in estoque.items():
+    if quantidade > 0:
+        estoque_filtrado[produto] = quantidade
+
+print(estoque_filtrado)"""
 
 ### 14. Extração de Chaves e Valores
 # Objetivo: Dado um dicionário, criar listas separadas para suas chaves e valores.
+"""dicionario = {"a": 1, "b": 2, "c": 3}
+chaves = list(dicionario.keys())
+valores = list(dicionario.values())
+print(f"Chaves: {chaves}")
+print(f"Valores: {valores}")"""
 
 ### 15. Contagem de Frequência de Itens
 # Objetivo: Dada uma string, contar a frequência de cada caractere usando um dicionário.
+"""texto: str = "Codigo em python para contagem de caracteres"
+ocorrencias: dict[str, int] = {}
+for caractere in texto:
+    if caractere in ocorrencias:
+        ocorrencias[caractere] += 1
+    else:
+        ocorrencias[caractere] = 1
+
+print(ocorrencias)"""
